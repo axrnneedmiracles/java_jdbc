@@ -7,8 +7,9 @@
     { key: 5, name: "Operating Systems", short: "OS" }
   ];
 
-  const defaultHost = window.location.hostname || "localhost";
-  const defaultApi = `http://${defaultHost}:8080/api`;
+  const host = window.location.hostname || "localhost";
+  const isLocal = !host || host === "localhost" || host === "127.0.0.1" || host.startsWith("192.168.") || host.startsWith("10.");
+  const defaultApi = isLocal ? `http://${host}:8080/api` : "https://java-jdbc-lqjd.onrender.com/api";
 
   const state = {
     apiBase: localStorage.getItem("edu_api_base") || defaultApi,
