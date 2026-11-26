@@ -14,7 +14,7 @@ A compact, professional Java project with a **separate frontend website** (`fron
 - **Deleted Student Login**: Shows `"Record not found. Kindly contact admin."`
 
 ## API Setup (No External API Key Needed)
-No third-party API key is required. Your Java `ApiServer` hosts a local REST API on port `8080` and connects directly to SQLite (`backend/data/students.db`) via JDBC.
+No third-party API key is required. Your Java `ApiServer` hosts a local REST API on port `8080` and connects directly to SQLite (`backend/data/students.db`) with JDBC.
 
 ## How to Run
 1. Double-click `start-backend.bat` (compiles Java and starts JDBC API on port `8080`).
