@@ -49,7 +49,7 @@ public class DatabaseManager {
                 DB_PASS = null;
             }
         } catch (Exception e) {
-            throw new RuntimeException("Failed to initialize JDBC driver/configuration: " + e.getMessage(), e);
+            throw new RuntimeException("Fail to initialize JDBC driver/configuration: " + e.getMessage(), e);
         }
     }
 
